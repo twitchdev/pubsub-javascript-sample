@@ -1,6 +1,6 @@
 var clientId = '<YOUR CLIENT ID HERE>'; 
 var redirectURI = '<YOUR REDIRECT URL HERE>';
-var scope = 'user_read+chat_login';
+var scope = 'user_read';
 var ws;
 
 function parseFragment(hash) {
@@ -101,6 +101,7 @@ $(function() {
             url: "https://api.twitch.tv/kraken/user",
             method: "GET",
             headers: {
+                "Accept": "application/vnd.twitchtv.v5+json",
                 "Client-ID": clientId,
                 "Authorization": "OAuth " + sessionStorage.twitchOAuthToken
             }})
