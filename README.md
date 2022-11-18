@@ -1,16 +1,23 @@
 # Twitch PubSub Javascript Sample
+
 Here you find a simple JavaScript PubSub implementation with client-side authentication using the Implicit Grant Flow. The project structure section will give you a quick overview of this code.
 
+## Update (2022)
+
+Modified for more modern coding practices. Replaced Twitch Kraken with Helix API. Removed jQuery, using vanilla JS. Removed Bootstrap CSS and added some basic styles directly.
+
 ## Structure
+
 `index.html`
 Provides the view of all incoming and outgoing pubsub messages.
 
 `main.js`
-Provides the actual functionality of the PubSub client.  If you are not authenticated, you will see the Connect to Twitch button and will be prompted through the authentication flow.  After authenticating, you will be able to send and receive raw PubSub messages.
+Provides the actual functionality of the PubSub client. If you are not authenticated, you will see the Connect to Twitch button and will be prompted through the authentication flow. After authenticating, you will be able to send and receive raw PubSub messages.
 
 ## License
 
 Copyright 2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+Modified 2022 Arno Richter (https://arnorichter.de)
 
 Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with the License. A copy of the License is located at
 
